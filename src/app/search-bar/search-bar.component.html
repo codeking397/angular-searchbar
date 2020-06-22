@@ -1,0 +1,13 @@
+<div class="topnav">
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input [(ngModel)]="name" type="text" placeholder="Search.." name="search" (keyup.enter)="search()"
+        #artist = "ngModel">
+      </form>
+    </div>
+  </div>
+  <!-- Do not know why this div not work -->
+  <div [hidden]="artist.valid" class="warning">
+    please fillout this field
+    </div>
+  <app-albums [albums]="albums" [albumsNumber]="albumsNumber" [name]="name" [open]="open"></app-albums>

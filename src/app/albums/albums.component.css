@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 125px;
+    height: 250px;
+    border-color: aquamarine;
+
+    background-color: beige;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  hr {
+    width: 80%;
+    height: 5px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom:10px;
+    background-color: aquamarine;
+ }

@@ -1,0 +1,11 @@
+<div class="title">
+    <h2 *ngIf="!open">Search Albums By ArtistName:</h2>
+    <h2 *ngIf="open">{{albumsNumber}} results for "{{name}}"</h2>
+</div>
+<hr>
+<div class="container" *ngIf="open">
+    <div class="gallery" *ngFor="let album of albums">
+        <img src={{album.artworkUrl100}} alt="album" width="600" height="400">
+        <div class="desc">{{album.collectionName}}</div>
+      </div>
+</div>
